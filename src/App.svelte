@@ -1,20 +1,25 @@
 <script>
-    let name =" "
+    let name =" ";
+    let result =''
+    $: show = `${name + result}`
 	const namechanger= (y)=>{
    name += y
+   result= ""
 }
 const total =()=>{
-    name= eval(name)
+    result= eval(name)
+    name=" "
 }
 const cancel= (y)=>{
    name = " "
+   result = ""
 }
 </script>
 
 <main>
  <table>
   <tr>
-     <td colspan="4"><input type="text"  bind:value ={name}  readonly="true">  </td>      
+     <td colspan="4"><input type="text"  bind:value ={show}  readonly="true">  </td>      
 </tr>
   <tr>
        <td><button on:click= {()=>{namechanger('1')}}>1</button></td>
