@@ -14,7 +14,7 @@ const cancel= (y)=>{
 <main>
  <table>
   <tr>
-     <th><input type="text"  bind:value ={name} colspan="4" readonly="true">  </th>      
+     <td colspan="4"><input type="text"  bind:value ={name}  readonly="true">  </td>      
 </tr>
   <tr>
        <td><button on:click= {()=>{namechanger('1')}}>1</button></td>
@@ -58,7 +58,7 @@ const cancel= (y)=>{
     table{
        margin: auto;
   background-color: black;
-  width: 29.5rem;
+
   max-width: 29.5rem;
   height: 32.5rem;
   text-align: center;
@@ -77,8 +77,8 @@ button{
   width: 6rem;
   height: 5rem;
   float: left;
-  margin: 5px;
-  font-size: 20px;
+  margin: 0.5rem;
+  font-size: 2rem;
   box-shadow: 0 0.4rem rgba(0,0,0,0.2);
   margin-bottom: 1.5rem;
 }
@@ -96,14 +96,12 @@ button:active {
   box-shadow: none;
 }
 input{
-     width: 265px;
-  max-width: 270px;
+    width: 26.5rem;
+  max-width: 27rem;
   font-size: 26px;
   text-align: right;
   background-color: #bcbd95;
   float: left;
 }
-td{
-    width: 7rem!important
-}
+
 </style>
