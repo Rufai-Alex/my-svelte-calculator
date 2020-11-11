@@ -43,10 +43,16 @@ const cancel= (y)=>{
     </tr>
    
     <tr>
-       <td> <button on:click= {()=>{cancel('')}}>c</button></td>
+       <td> <button on:click= {()=>{namechanger('.')}}>.</button></td>
         <td> <button on:click= {()=>{namechanger('0')}}>0</button></td>
-         <td> <button on:click= {total}>=</button></td>
-        <td> <button on:click= {()=>{namechanger('-')}}>-</button></td>
+           <td> <button on:click= {()=>{namechanger('00')}}>00</button></td>
+      <td > <button on:click= {()=>{namechanger('-')}}>-</button></td>
+       
+    </tr>
+   <tr>
+       <td colspan=2 > <button style='width: 12rem'on:click= {()=>{cancel('')}}>c</button></td>
+        <td colspan=2>  <button style='width: 12rem' on:click= {total}>=</button></td>
+     
     </tr>
    
 
@@ -101,12 +107,13 @@ button:active {
   box-shadow: none;
 }
 input{
-    width: 26.5rem;
+    width: 28rem;
   max-width: 27rem;
   font-size: 26px;
   text-align: right;
   background-color: #bcbd95;
-  float: left;
+  float: right;
+  height: 5rem;
 }
 
 </style>
