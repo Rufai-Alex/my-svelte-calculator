@@ -50,8 +50,8 @@ const cancel= (y)=>{
        
     </tr>
    <tr>
-       <td colspan=2 > <button style='width: 12rem'on:click= {()=>{cancel('')}}>c</button></td>
-        <td colspan=2>  <button style='width: 12rem' on:click= {total}>=</button></td>
+       <td  colspan=2 > <button style='width: 12rem'on:click= {()=>{cancel('')}}>c</button></td>
+        <td class=" equal"colspan=2>  <button style='width: 12rem' on:click= {total}>=</button></td>
      
     </tr>
    
@@ -115,5 +115,7 @@ input{
   float: right;
   height: 5rem;
 }
-
+.equal{
+  background-color: blue;
+}
 </style>
